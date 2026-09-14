@@ -1,11 +1,11 @@
 cask "magi" do
-  version "0.2.7"
-  sha256 "6fd3d01e59aac91096a281d15cdc309ad0c48b02a1dbd0fe31ac6a1812aa486a"
+  version "0.2.8"
+  sha256 "52e33e40e9949fe1677b58d12e25ded2563f0729c6842be5e7b46c98caf34008"
 
-  url "https://github.com/DeepakSilaych/orca/releases/download/v#{version}/Magi-#{version}-arm64.dmg"
+  url "https://github.com/DeepakSilaych/magi/releases/download/v#{version}/Magi-#{version}-arm64.dmg"
   name "Magi"
   desc "Multi-repository terminal workspaces for coding agents"
-  homepage "https://github.com/DeepakSilaych/orca"
+  homepage "https://github.com/DeepakSilaych/magi"
 
   depends_on arch: :arm64
   depends_on formula: ["gh", "git", "python@3.14", "tmux"]
