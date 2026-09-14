@@ -1,6 +1,6 @@
 cask "magi" do
-  version "0.2.6"
-  sha256 "023ae5ba5697518c2901f2b883be9fb1aac0ac8cf4491d3be34ed9087b6e1845"
+  version "0.2.7"
+  sha256 "6fd3d01e59aac91096a281d15cdc309ad0c48b02a1dbd0fe31ac6a1812aa486a"
 
   url "https://github.com/DeepakSilaych/orca/releases/download/v#{version}/Magi-#{version}-arm64.dmg"
   name "Magi"
