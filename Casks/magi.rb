@@ -9,7 +9,7 @@ cask "magi" do
 
   depends_on arch: :arm64
   depends_on formula: ["gh", "git", "python@3.14", "tmux"]
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Magi.app"
 
