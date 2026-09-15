@@ -1,6 +1,6 @@
 cask "relay" do
-  version "0.2.9"
-  sha256 "b429070bcee8b5d033c78d4872f47045dcf80b2c3a121ac8b773c732ac4c997d"
+  version "0.3.0"
+  sha256 "2f21dc2a920437858c110c24d352a8dc12315c7c7b9c3c1c4abe1856490fbb43"
 
   url "https://github.com/DeepakSilaych/relay/releases/download/v#{version}/Relay-#{version}-arm64.dmg"
   name "Relay"
@@ -12,6 +12,7 @@ cask "relay" do
   depends_on macos: :monterey
 
   app "Relay.app"
+  binary "#{appdir}/Relay.app/Contents/Resources/relay/backend/relay.py", target: "relay"
 
   caveats <<~EOS
     Relay is ad-hoc signed and not notarized by Apple.
