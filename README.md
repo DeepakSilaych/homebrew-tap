@@ -1,5 +1,20 @@
 # Deepak's Homebrew tap
 
+## Install sess
+
+Persistent SSH terminals powered by zmx, for macOS and Linux on ARM64 and AMD64.
+
+```sh
+brew install deepaksilaych/tap/sess
+sess init user@host
+sess set --host user@host
+sess new work
+```
+
+Update with `brew update && brew upgrade sess`. Bash, zsh, and fish completions are included.
+
+[Documentation](https://github.com/DeepakSilaych/sess#readme)
+
 ## Install Magi
 
 ```sh
