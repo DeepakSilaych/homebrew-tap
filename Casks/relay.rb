@@ -1,6 +1,6 @@
 cask "relay" do
-  version "0.3.1"
-  sha256 "f296a8d99ef9c5d4156a053d688dd094baefd4165ea9b30dd2e628a16224d898"
+  version "0.3.2"
+  sha256 "97a6b2ea8b822f0d94f9703e16ef8d704d54a027cd4af144212549d23b087562"
 
   url "https://github.com/DeepakSilaych/relay/releases/download/v#{version}/Relay-#{version}-arm64.dmg"
   name "Relay"
