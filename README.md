@@ -15,20 +15,17 @@ Update with `brew update && brew upgrade sess`. Bash, zsh, and fish completions 
 
 [Documentation](https://github.com/DeepakSilaych/sess#readme)
 
-## Install Magi
+## Install Relay
 
 ```sh
-brew tap deepaksilaych/tap
-brew install --cask magi
+brew install --cask deepaksilaych/tap/relay-workspaces
 ```
 
-Or, in one command:
+Update with `brew update && brew upgrade --cask relay-workspaces`.
 
-```sh
-brew install --cask deepaksilaych/tap/magi
-```
-
-Update with `brew update && brew upgrade --cask magi`.
+The cask was previously named `relay` (and before that `magi`). `relay` now also
+names an unrelated cask in Homebrew's main repository, so existing installs are
+renamed to `relay-workspaces` on the next `brew update`.
 
 Magi currently ships for Apple Silicon on macOS 12 or newer. The cask installs Git, GitHub CLI, tmux and Python for local sessions. Remote hosts need their own dependencies.
 

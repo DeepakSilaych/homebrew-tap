@@ -1,6 +1,6 @@
-cask "relay" do
-  version "0.3.2"
-  sha256 "97a6b2ea8b822f0d94f9703e16ef8d704d54a027cd4af144212549d23b087562"
+cask "relay-workspaces" do
+  version "0.4.0"
+  sha256 "cde5e69de507f858ffab344b1c63ec47257f263a4d56eacd723db5490a500567"
 
   url "https://github.com/DeepakSilaych/relay/releases/download/v#{version}/Relay-#{version}-arm64.dmg"
   name "Relay"
@@ -8,7 +8,7 @@ cask "relay" do
   homepage "https://github.com/DeepakSilaych/relay"
 
   depends_on arch: :arm64
-  depends_on formula: ["gh", "git", "python@3.14", "tmux"]
+  depends_on formula: ["dtach", "gh", "git", "python@3.14"]
   depends_on macos: :monterey
 
   app "Relay.app"
@@ -19,6 +19,8 @@ cask "relay" do
     After the first launch attempt, macOS may require approval in
     System Settings > Privacy & Security.
 
-    Your workspaces and sess sessions are preserved when updating or uninstalling.
+    Your workspaces are preserved when updating or uninstalling. Terminals started
+    by Relay 0.3.x under tmux stay attachable until they end; new terminals use dtach.
+    Remote hosts need dtach installed (apt install dtach).
   EOS
 end
